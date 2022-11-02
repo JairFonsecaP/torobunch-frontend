@@ -1,0 +1,58 @@
+{
+  "Code": "en",
+  "Name": "English",
+  "Langs": [
+    { "key": "fr", "value": "Français" },
+    { "key": "es", "value": "Español" }
+  ],
+  "TitleLang": "Language",
+  "NavBarOptions": [
+    { "link": "/", "title": "Home", "description": "Company of cleaners" },
+    { "link": "services", "title": "Services" },
+    { "link": "about", "title": "About us" },
+    { "link": "contact", "title": "Contact" },
+    { "link": "jobs", "title": "Jobs" }
+  ],
+  "CarouselElements": [
+    {
+      "src": "/carousel/1.jpg",
+      "alt": "image 1",
+      "text": "Photo 1",
+      "caption": "Photo 1",
+      "to": ""
+    },
+    {
+      "src": "/carousel/2.jpg",
+      "alt": "image 2",
+      "text": "Photo 2",
+      "caption": "Photo 2",
+      "to": ""
+    },
+    {
+      "src": "/carousel/3.jpg",
+      "alt": "image 3",
+      "text": "Photo 3",
+      "caption": "Photo 3",
+      "to": ""
+    },
+    {
+      "src": "/carousel/4.jpg",
+      "alt": "image 4",
+      "text": "Photo 4",
+      "caption": "Photo 4",
+      "to": ""
+    },
+    {
+      "src": "/carousel/5.jpg",
+      "alt": "image 5",
+      "text": "Photo 5",
+      "caption": "Photo 5",
+      "to": ""
+    }
+  ],
+  "SecondPartFirstText": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including ",
+  "SecondPartSecondText": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including ",
+  "WhyChooseUsTitle": "Why choose us",
+  "WhyChooseUsText": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including",
+  "CopyRights": "All rights reserved."
+}
