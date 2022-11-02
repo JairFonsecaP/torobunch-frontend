@@ -1,3 +1,7 @@
+import es from './locales/es.json'
+import fr from './locales/fr.json'
+import en from './locales/en.json'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -35,6 +39,7 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -56,6 +61,36 @@ export default {
         ital: [100]
       },
     }
-  }
-
+  },
+  i18n: {
+    locales: [
+      {
+        code: 'fr',
+        name: 'Français'
+      },
+      {
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'es',
+        name: 'Español'
+      }
+    ],
+    // defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: en,
+        fr: fr,
+        es: es
+      }
+    },
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'locale',
+      redirectOn: 'root',  // recommended
+      alwaysRedirect: true
+    }
+  },
 }

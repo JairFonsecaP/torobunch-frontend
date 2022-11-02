@@ -12,7 +12,7 @@
         img-height="480"
       >
         <b-carousel-slide
-          v-for="picture in messages.CarouselElements"
+          v-for="picture in $t('CarouselElements')"
           :key="picture.src"
           :caption="picture.caption"
           :text="picture.text"
@@ -31,7 +31,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
 export default {
   data() {
     return {
@@ -40,6 +39,6 @@ export default {
     };
   },
   methods: {},
-  computed: { ...mapGetters({ messages: 'getMessages' }) },
+  computed: {},
 };
 </script>

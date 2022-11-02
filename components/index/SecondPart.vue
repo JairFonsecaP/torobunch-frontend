@@ -3,7 +3,7 @@
     <b-card-group deck>
       <b-card border-variant="info">
         <b-card-text class="paragraph text-secondary">
-          {{ messages.SecondPartFirstText }}
+          {{ $t('SecondPartFirstText') }}
         </b-card-text>
       </b-card>
 
@@ -16,7 +16,7 @@
 
       <b-card border-variant="info">
         <b-card-text class="paragraph text-secondary">
-          {{ messages.SecondPartSecondText }}
+          {{ $t('SecondPartSecondText') }}
         </b-card-text>
       </b-card>
     </b-card-group>
@@ -24,14 +24,11 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
 export default {
   data: () => {
     return {};
   },
-  computed: {
-    ...mapGetters({ messages: 'getMessages' }),
-  },
+  computed: {},
 };
 </script>
 

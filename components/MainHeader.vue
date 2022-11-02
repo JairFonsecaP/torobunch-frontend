@@ -22,7 +22,7 @@
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
             <b-nav-item
-              v-for="option in messages.NavBarOptions"
+              v-for="option in $t('NavBarOptions')"
               :key="option.link"
               :to="option.link"
               >{{ option.title }}</b-nav-item
@@ -31,15 +31,15 @@
 
           <b-navbar-nav class="ml-auto">
             <b-nav-item-dropdown
-              :text="messages.TitleLang + ' | ' + messages.Name"
+              :text="$t('TitleLang') + ' | ' + $t('Name')"
               right
             >
               <b-dropdown-item
-                v-for="lang in messages.Langs"
-                @click="changeLanguage(lang.key)"
-                :key="lang.key"
+                v-for="lang in availableLocales"
+                :to="switchLocalePath(lang.code)"
+                :key="lang.code"
               >
-                {{ lang.value }}
+                {{ lang.name }}
               </b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
@@ -50,7 +50,6 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex';
 export default {
   name: 'MainHeader',
   head() {
@@ -68,15 +67,18 @@ export default {
       lang: 'en',
     };
   },
-  beforeCreate() {
-    this.lang = this.$store.state.lang;
-  },
-  beforeUpdate() {
-    this.lang = this.$store.state.lang;
-  },
-  methods: { ...mapMutations(['changeLanguage']) },
+  // beforeCreate() {
+  //   this.lang = 'en';
+  // },
+  // beforeUpdate() {
+  //   this.lang = 'es';
+  // },
+  // methods: { ...mapMutations(['changeLanguage']) },
   computed: {
-    ...mapGetters({ messages: 'getMessages' }),
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale);
+    },
+    // ...mapGetters({ messages: 'getMessages' }),
   },
 };
 </script>

@@ -1,10 +1,6 @@
 {
   "Code": "en",
   "Name": "English",
-  "Langs": [
-    { "key": "fr", "value": "Français" },
-    { "key": "es", "value": "Español" }
-  ],
   "TitleLang": "Language",
   "NavBarOptions": [
     { "link": "/", "title": "Home", "description": "Company of cleaners" },

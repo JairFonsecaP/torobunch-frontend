@@ -2,7 +2,7 @@
   <div>
     <main-header />
     <nuxt class="mt-6" />
-    <main-footer />
+    <!-- <main-footer /> -->
   </div>
 </template>
 <script>
@@ -11,6 +11,9 @@ import Footer from '../components/MainFooter';
 
 export default {
   components: { Header, Footer },
+  nuxtI18n: {
+    locales: ['fr', 'es', 'en'],
+  },
   data: () => {
     return {};
   },

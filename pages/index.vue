@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
 import CarouselIndex from '~/components/index/CarouselIndex.vue';
 import SecondPart from '~/components/index/SecondPart.vue';
 import WhyChoose from '~/components/index/WhyChoose.vue';
@@ -36,16 +35,13 @@ export default {
     };
   },
   beforeCreate() {
-    this.titlePage = this.$store.state.messages.NavBarOptions[0].title;
-    this.descriptionPage =
-      this.$store.state.messages.NavBarOptions[0].description;
+    // this.titlePage = this.$store.state.messages.NavBarOptions[0].title;
+    // this.descriptionPage =
+    //   this.$store.state.messages.NavBarOptions[0].description;
   },
   beforeUpdate() {
-    this.titlePage = this.$store.state.messages.NavBarOptions[0].title;
+    // this.titlePage = this.$store.state.messages.NavBarOptions[0].title;
   },
-  computed: {
-    ...mapGetters({ messages: 'getMessages' }),
-    // ...mapState(['messages']),
-  },
+  computed: {},
 };
 </script>
